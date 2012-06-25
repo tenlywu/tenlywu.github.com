@@ -1,0 +1,313 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>流量的两种切分方式</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Tenly 知识管理</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>流量的两种切分方式</h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <p>网站的流量是由 Visitors（访问者）行为导致。在 SiteMaster 中，是通过基于 Cookie 技术的 <code>指纹算法</code>，尽可能识别准确的“自然人”。Visitors 会多次 Visits（访问）网站，每次 Visit 都会造成多个 PageViews （页面浏览）。</p>
+
+<p>当把网站的所有的 Visits 作为一个大的集合时，每一个 Visit 就是这个集合里的个体。SiteMaster 有两种切分方式将这个集合像蛋糕一样进行完整切分，使：<code>每一个子集间无交集，且所有子集的并集为原集合</code>。</p>
+
+<h3 id='_visits__cookie_'>根据 Visits 的 Cookie 历史</h3>
+
+<p>V 代表所有 Visits 的集合。</p>
+
+<p>A 代表所有 有与此 SiteID 关联项目广告历史的 Visits。</p>
+
+<p>B 代表所有 无与此 SiteID 关联项目广告历史的 Visits。</p>
+
+<p>此时 A 与 B 两集合无交集，A 与 B 并集为 V。</p>
+
+<p>注意几个基本概念：</p>
+
+<p>* 广告历史</p>
+
+<blockquote>
+<p>Visitors 在造成 Visit 是，会携带其 AdMaster Cookie，包含了其与 AdMaster 广告交互（曝光或点击）的历史信息。<strong>SiteMaster 只追溯最近 30 天的广告历史信息。</strong></p>
+</blockquote>
+
+<p>* 关联项目</p>
+
+<blockquote>
+<p>指在 TrackMaster 系统项目属性中，关联了此 <code>SiteID</code> 的项目，<code>项目ID</code> 与 <code>SiteID</code> 是多对一的关系</p>
+</blockquote>
+
+<p>* 关联项目广告历史</p>
+
+<blockquote>
+<p>存在 Visitors 有广告历史，但这些历史的所属 <code>项目ID</code> 只有部分，甚至没有与 <code>SiteID</code> 关联。</p>
+</blockquote>
+
+<p><strong>SiteMaster 广告模块的报告，分析的数据集合为 A，即仅对有关联项目广告历史的 Visits 进行统计分析。</strong></p>
+
+<h3 id='_visits__landing_page_url__referral_url'>根据 Visits 的 Landing Page URL 与 Referral URL</h3>
+
+<p>V 代表所有 Visits 的集合。<br />X 代表所有 Landing Page 带有合法 smt 参数的 Visits。<br />Y 代表所有 Landing Page 不带有合法 smt 参数的 Visits。</p>
+
+<p>此时 X 与 Y 两集合无交集，X 与 Y 并集为 V。</p>
+
+<p>在集合 Y 中的 Visits，再进行切分：</p>
+
+<ul>
+<li>Y1 代表 Referral URL 的 Hostname 在搜索引擎域名列表中的 Visits。</li>
+
+<li>Y2 代表 Referral URL 的 Hostname 在社会化媒体域名列表中的 Visits。</li>
+
+<li>Y3 代表 Referral URL 的 Hostname 在不在搜索引擎与社会化媒体列表的 Visits。</li>
+
+<li>Y4 代表 Referral URL 为空的 Visits。</li>
+</ul>
+
+<p>此时 Y1 Y2 Y3 Y4 四集合无交集，Y1 Y2 Y3 Y4 并集为 Y。<br />此时 Y1 Y2 Y3 Y4 X 五集合无交集，Y1 Y2 Y3 Y4 X 并集为 V。</p>
+
+<p>注意几个基本概念：</p>
+
+<ul>
+<li>
+<p>smt 参数</p>
+
+<blockquote>
+<p>smt 参数包括 项目、媒体、广告位、创意、关键字 五个。有一定的合法条件，只有合法的 smt 参数组合才被记录</p>
+</blockquote>
+
+<p>* 关联项目</p>
+
+<blockquote>
+<p>smt_b 参数扩充时，不考虑关联关系，但在数据展现时，ID 是否解释成具体名称需要考虑关联关系。</p>
+</blockquote>
+</li>
+</ul>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/SiteMaster/2012/06/siteNavi" title="SiteMaster 报告模块结构">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/SiteMaster/2012/06/smt" title="SMT 参数定义">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'tenlywu'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>22 June 2012</span></div>
+    
+  
+  
+
+  
+  <h2 id="SiteMaster-ref">SiteMaster</h2>
+  <ul>
+      
+    
+
+
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/siteAds">广告数据模块页面</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/smt">SMT 参数定义</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="/SiteMaster/2012/06/siteTraffic" class="active">流量的两种切分方式</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/siteNavi">SiteMaster 报告模块结构</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/siteGetTrack">与 Track 数据对接的几种情况</a></li>
+      	
+      
+    
+  
+
+
+
+  </ul>
+  
+
+  
+  <h2 id="lessons-ref">lessons</h2>
+  <ul>
+      
+    
+
+
+  
+    
+      
+      	
+      	<li><a href="/lessons/2011/12/jekyll-introduction">Jekyll Introduction</a></li>
+      	
+      
+    
+  
+
+
+
+  </ul>
+  
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+

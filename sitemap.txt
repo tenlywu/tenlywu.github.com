@@ -1,0 +1,16 @@
+
+http://username.github.com/archive.html
+http://username.github.com/atom.xml
+http://username.github.com/categories.html
+http://username.github.com/index.html
+http://username.github.com/pages.html
+http://username.github.com/sitemap.txt
+http://username.github.com/tags.html
+
+http://username.github.com/SiteMaster/2012/06/siteAds
+http://username.github.com/SiteMaster/2012/06/smt
+http://username.github.com/SiteMaster/2012/06/siteTraffic
+http://username.github.com/SiteMaster/2012/06/siteNavi
+http://username.github.com/SiteMaster/2012/06/siteGetTrack
+http://username.github.com/Temp/2012/06/PMmeeting
+http://username.github.com/lessons/2011/12/jekyll-introduction

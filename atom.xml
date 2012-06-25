@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+ 
+ <title>Tenly 知识管理</title>
+ <link href="http://username.github.com/atom.xml" rel="self"/>
+ <link href="http://username.github.com"/>
+ <updated>2012-06-25T11:48:15+08:00</updated>
+ <id>http://username.github.com</id>
+ <author>
+   <name>Name Lastname</name>
+   <email>blah@email.test</email>
+ </author>
+
+ 
+ <entry>
+   <title>广告数据模块页面</title>
+   <link href="http://username.github.com/SiteMaster/2012/06/siteAds"/>
+   <updated>2012-06-24T00:00:00+08:00</updated>
+   <id>http://username.github.com/SiteMaster/2012/06/siteAds</id>
+   <content type="html">&lt;h2 id='id5'&gt;整合报告&lt;/h2&gt;
+
+&lt;p&gt;整合报告是用来呈现 &lt;code&gt;带有相关联广告历史&lt;/code&gt; Visits 的，这些 Visits 必然是由曝光或者点击引导的，曝光引导与点击引导是互斥的。&lt;/p&gt;
+
+&lt;p&gt;报告分为三个标签页，第一个标签呈现由曝光或点击引导的 Visits，第二个标签为曝光引导的 Visits，第三个标签为点击引导的 Visits。&lt;/p&gt;
+
+&lt;h3 id='id6'&gt;整合引导&lt;/h3&gt;
+
+&lt;p&gt;初期先准备七个指标，主要是基础非计算指标，未来再在界面上添加：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;曝光 Impressions&lt;/li&gt;
+
+&lt;li&gt;点击 Clicks&lt;/li&gt;
+
+&lt;li&gt;访问次数 Visits&lt;/li&gt;
+
+&lt;li&gt;页面浏览量 Pageviews&lt;/li&gt;
+
+&lt;li&gt;访问平均时长 Avg. Visit Duration&lt;/li&gt;
+
+&lt;li&gt;跳出率 Bounce Rate&lt;/li&gt;
+
+&lt;li&gt;新访比 %New Visits&lt;/li&gt;
+&lt;/ul&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;项目ID&lt;/th&gt;&lt;th&gt;项目名称&lt;/th&gt;&lt;th&gt;曝光&lt;/th&gt;&lt;th&gt;点击&lt;/th&gt;&lt;th&gt;访问次数&lt;/th&gt;&lt;th&gt;页面浏览量&lt;/th&gt;&lt;th&gt;访问平均时长&lt;/th&gt;&lt;th&gt;跳出率&lt;/th&gt;&lt;th&gt;新访比&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120400&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试一下&lt;/td&gt;&lt;td style='text-align: right;'&gt;4,984,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,994&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,244&lt;/td&gt;&lt;td style='text-align: right;'&gt;4,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:14:00&lt;/td&gt;&lt;td style='text-align: right;'&gt;59.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;99.5%&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120300&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试二下&lt;/td&gt;&lt;td style='text-align: right;'&gt;999,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;994&lt;/td&gt;&lt;td style='text-align: right;'&gt;884&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:24:10&lt;/td&gt;&lt;td style='text-align: right;'&gt;50.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;79.0%&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120100&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试三下&lt;/td&gt;&lt;td style='text-align: right;'&gt;984,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;794&lt;/td&gt;&lt;td style='text-align: right;'&gt;444&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:04:00&lt;/td&gt;&lt;td style='text-align: right;'&gt;79.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;39.6%&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;用户可以点击项目进行下钻，下钻为媒体列表-》广告位列表-》创意列表。或者挑选第二维度（媒体、广告位、创意）&lt;/p&gt;
+
+&lt;h3 id='id7'&gt;曝光引导&lt;/h3&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;项目ID&lt;/th&gt;&lt;th&gt;项目名称&lt;/th&gt;&lt;th&gt;曝光&lt;/th&gt;&lt;th&gt;点击&lt;/th&gt;&lt;th&gt;曝光引导&lt;br /&gt;访问次数&lt;/th&gt;&lt;th&gt;页面浏览量&lt;/th&gt;&lt;th&gt;访问平均时长&lt;/th&gt;&lt;th&gt;跳出率&lt;/th&gt;&lt;th&gt;新访比&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120400&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试一下&lt;/td&gt;&lt;td style='text-align: right;'&gt;4,984,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,994&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,244&lt;/td&gt;&lt;td style='text-align: right;'&gt;4,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:14:00&lt;/td&gt;&lt;td style='text-align: right;'&gt;59.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;99.5%&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120300&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试二下&lt;/td&gt;&lt;td style='text-align: right;'&gt;999,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;994&lt;/td&gt;&lt;td style='text-align: right;'&gt;884&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:24:10&lt;/td&gt;&lt;td style='text-align: right;'&gt;50.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;79.0%&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120100&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试三下&lt;/td&gt;&lt;td style='text-align: right;'&gt;984,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;794&lt;/td&gt;&lt;td style='text-align: right;'&gt;444&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:04:00&lt;/td&gt;&lt;td style='text-align: right;'&gt;79.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;39.6%&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;h3 id='id8'&gt;点击引导&lt;/h3&gt;
+
+&lt;p&gt;用户可以点击项目进行下钻，下钻为媒体列表-》广告位列表-》创意列表。或者挑选第二维度（媒体、广告位、创意）&lt;/p&gt;
+&lt;table&gt;&lt;thead&gt;&lt;tr&gt;&lt;th&gt;项目ID&lt;/th&gt;&lt;th&gt;项目名称&lt;/th&gt;&lt;th&gt;曝光&lt;/th&gt;&lt;th&gt;点击&lt;/th&gt;&lt;th&gt;点击引导&lt;br /&gt;访问次数&lt;/th&gt;&lt;th&gt;页面浏览量&lt;/th&gt;&lt;th&gt;访问平均时长&lt;/th&gt;&lt;th&gt;跳出率&lt;/th&gt;&lt;th&gt;新访比&lt;/th&gt;&lt;/tr&gt;&lt;/thead&gt;&lt;tbody&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120400&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试一下&lt;/td&gt;&lt;td style='text-align: right;'&gt;4,984,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,994&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,244&lt;/td&gt;&lt;td style='text-align: right;'&gt;4,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:14:00&lt;/td&gt;&lt;td style='text-align: right;'&gt;59.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;99.5%&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120300&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试二下&lt;/td&gt;&lt;td style='text-align: right;'&gt;999,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;994&lt;/td&gt;&lt;td style='text-align: right;'&gt;884&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:24:10&lt;/td&gt;&lt;td style='text-align: right;'&gt;50.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;79.0%&lt;/td&gt;
+&lt;/tr&gt;&lt;tr&gt;&lt;td style='text-align: left;'&gt;120100&lt;/td&gt;&lt;td style='text-align: left;'&gt;测试三下&lt;/td&gt;&lt;td style='text-align: right;'&gt;984,312&lt;/td&gt;&lt;td style='text-align: right;'&gt;794&lt;/td&gt;&lt;td style='text-align: right;'&gt;444&lt;/td&gt;&lt;td style='text-align: right;'&gt;1,809&lt;/td&gt;&lt;td style='text-align: right;'&gt;00:04:00&lt;/td&gt;&lt;td style='text-align: right;'&gt;79.3%&lt;/td&gt;&lt;td style='text-align: right;'&gt;39.6%&lt;/td&gt;
+&lt;/tr&gt;&lt;/tbody&gt;&lt;/table&gt;
+&lt;p&gt;用户可以点击项目进行下钻，下钻为媒体列表-》广告位列表-》创意列表。或者挑选第二维度（媒体、广告位、创意）&lt;/p&gt;
+
+&lt;h2 id='id9'&gt;广告转化流&lt;/h2&gt;
+
+&lt;p&gt;每一个由广告造成的 Visit，都有其与关联广告曝光与&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>SMT 参数定义</title>
+   <link href="http://username.github.com/SiteMaster/2012/06/smt"/>
+   <updated>2012-06-22T00:00:00+08:00</updated>
+   <id>http://username.github.com/SiteMaster/2012/06/smt</id>
+   <content type="html">&lt;h2 id='smt_'&gt;SMT 参数定义&lt;/h2&gt;
+
+&lt;p&gt;每一个 Visits 如果需要涉及 smt 来源参数，数据结构上固定存在五个字段存储参数信息，分别是：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a 项目&lt;/li&gt;
+
+&lt;li&gt;b 广告位&lt;/li&gt;
+
+&lt;li&gt;c 媒体&lt;/li&gt;
+
+&lt;li&gt;i 创意&lt;/li&gt;
+
+&lt;li&gt;k 关键字&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;现开放两套 smt 方案给用户使用：&lt;/p&gt;
+
+&lt;p&gt;方案一：实现与 TrackMaster 的来源对接&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;~~smt_a~~：INT 用来收集 a 参数属性。但由于 smt_b 信息可以查表获取，所以此参数不开放填写。&lt;/li&gt;
+
+&lt;li&gt;smt_b【必选】：INT 用来收集 b 参数属性。&lt;strong&gt;如果查表无完整信息则放弃所有来源信息。&lt;/strong&gt;&lt;/li&gt;
+
+&lt;li&gt;~~smt_c~~：INT 用来收集 c 参数属性。但由于 smt_c 信息可以查表获取，所以此参数不开放填写。&lt;/li&gt;
+
+&lt;li&gt;smt_i【可选】：INT 用来收集 i 参数属性。如果不填或者错误， i 参数记录值都为 0。&lt;/li&gt;
+
+&lt;li&gt;smt_k【可选】：CHAR 用来收集 k 参数属性。如果不填或者错误， k 参数记录值都为 空。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;方案二：开放给用户自定义使用（命名上区别两套方案，换2个完全不同的字母，防止手误）&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;smt_cp【必选】：CHAR 用来收集 a 参数属性。&lt;/li&gt;
+
+&lt;li&gt;smt_pl【必选】：CHAR 用来收集 b 参数属性。&lt;/li&gt;
+
+&lt;li&gt;smt_md【必选】：CHAR 用来收集 c 参数属性。&lt;/li&gt;
+
+&lt;li&gt;smt_ct【可选】：CHAR 用来收集 i 参数属性。如果不填或者错误， i 参数记录值都为 0。&lt;/li&gt;
+
+&lt;li&gt;smt_kw【可选】：CHAR 用来收集 k 参数属性。如果不填或者错误， k 参数记录值都为 空。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;两套方案的 smt 参数不能混用。即不允许同时存在 &lt;code&gt;smt_?&lt;/code&gt; 与 &lt;code&gt;smt_??&lt;/code&gt;。如果混用，丢弃所有 smt 参数值。&lt;/p&gt;
+
+&lt;h2 id='id4'&gt;示例&lt;/h2&gt;
+
+&lt;p&gt;http://www.tenly.com/?&lt;code&gt;smt_b=200001101&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a: 100002(查表获取)&lt;/li&gt;
+
+&lt;li&gt;b: 200001101&lt;/li&gt;
+
+&lt;li&gt;c: 10204（查表获取）&lt;/li&gt;
+
+&lt;li&gt;i: 0&lt;/li&gt;
+
+&lt;li&gt;k: 空&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;http://www.tenly.com/?&lt;code&gt;smt_b=200001101&lt;/code&gt;&amp;amp;&lt;code&gt;smt_pl=newone&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a: 空&lt;/li&gt;
+
+&lt;li&gt;b: 空&lt;/li&gt;
+
+&lt;li&gt;c: 空&lt;/li&gt;
+
+&lt;li&gt;i: 空&lt;/li&gt;
+
+&lt;li&gt;k: 空&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;http://www.tenly.com/?&lt;code&gt;smt_cp=113456&lt;/code&gt;&amp;amp;&lt;code&gt;smt_pl=newone&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a: 空&lt;/li&gt;
+
+&lt;li&gt;b: 空&lt;/li&gt;
+
+&lt;li&gt;c: 空&lt;/li&gt;
+
+&lt;li&gt;i: 空&lt;/li&gt;
+
+&lt;li&gt;k: 空&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;http://www.tenly.com/?&lt;code&gt;smt_cp=20241&lt;/code&gt;&amp;amp;&lt;code&gt;smt_pl=newone&lt;/code&gt;&amp;amp;&lt;code&gt;smt_md=sina&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;a: 20241&lt;/li&gt;
+
+&lt;li&gt;b: newone&lt;/li&gt;
+
+&lt;li&gt;c: sina&lt;/li&gt;
+
+&lt;li&gt;i: 0&lt;/li&gt;
+
+&lt;li&gt;k: 空&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>流量的两种切分方式</title>
+   <link href="http://username.github.com/SiteMaster/2012/06/siteTraffic"/>
+   <updated>2012-06-22T00:00:00+08:00</updated>
+   <id>http://username.github.com/SiteMaster/2012/06/siteTraffic</id>
+   <content type="html">&lt;p&gt;网站的流量是由 Visitors（访问者）行为导致。在 SiteMaster 中，是通过基于 Cookie 技术的 &lt;code&gt;指纹算法&lt;/code&gt;，尽可能识别准确的“自然人”。Visitors 会多次 Visits（访问）网站，每次 Visit 都会造成多个 PageViews （页面浏览）。&lt;/p&gt;
+
+&lt;p&gt;当把网站的所有的 Visits 作为一个大的集合时，每一个 Visit 就是这个集合里的个体。SiteMaster 有两种切分方式将这个集合像蛋糕一样进行完整切分，使：&lt;code&gt;每一个子集间无交集，且所有子集的并集为原集合&lt;/code&gt;。&lt;/p&gt;
+
+&lt;h3 id='_visits__cookie_'&gt;根据 Visits 的 Cookie 历史&lt;/h3&gt;
+
+&lt;p&gt;V 代表所有 Visits 的集合。&lt;/p&gt;
+
+&lt;p&gt;A 代表所有 有与此 SiteID 关联项目广告历史的 Visits。&lt;/p&gt;
+
+&lt;p&gt;B 代表所有 无与此 SiteID 关联项目广告历史的 Visits。&lt;/p&gt;
+
+&lt;p&gt;此时 A 与 B 两集合无交集，A 与 B 并集为 V。&lt;/p&gt;
+
+&lt;p&gt;注意几个基本概念：&lt;/p&gt;
+
+&lt;p&gt;* 广告历史&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Visitors 在造成 Visit 是，会携带其 AdMaster Cookie，包含了其与 AdMaster 广告交互（曝光或点击）的历史信息。&lt;strong&gt;SiteMaster 只追溯最近 30 天的广告历史信息。&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;* 关联项目&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;指在 TrackMaster 系统项目属性中，关联了此 &lt;code&gt;SiteID&lt;/code&gt; 的项目，&lt;code&gt;项目ID&lt;/code&gt; 与 &lt;code&gt;SiteID&lt;/code&gt; 是多对一的关系&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;* 关联项目广告历史&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;存在 Visitors 有广告历史，但这些历史的所属 &lt;code&gt;项目ID&lt;/code&gt; 只有部分，甚至没有与 &lt;code&gt;SiteID&lt;/code&gt; 关联。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;SiteMaster 广告模块的报告，分析的数据集合为 A，即仅对有关联项目广告历史的 Visits 进行统计分析。&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id='_visits__landing_page_url__referral_url'&gt;根据 Visits 的 Landing Page URL 与 Referral URL&lt;/h3&gt;
+
+&lt;p&gt;V 代表所有 Visits 的集合。&lt;br /&gt;X 代表所有 Landing Page 带有合法 smt 参数的 Visits。&lt;br /&gt;Y 代表所有 Landing Page 不带有合法 smt 参数的 Visits。&lt;/p&gt;
+
+&lt;p&gt;此时 X 与 Y 两集合无交集，X 与 Y 并集为 V。&lt;/p&gt;
+
+&lt;p&gt;在集合 Y 中的 Visits，再进行切分：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Y1 代表 Referral URL 的 Hostname 在搜索引擎域名列表中的 Visits。&lt;/li&gt;
+
+&lt;li&gt;Y2 代表 Referral URL 的 Hostname 在社会化媒体域名列表中的 Visits。&lt;/li&gt;
+
+&lt;li&gt;Y3 代表 Referral URL 的 Hostname 在不在搜索引擎与社会化媒体列表的 Visits。&lt;/li&gt;
+
+&lt;li&gt;Y4 代表 Referral URL 为空的 Visits。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;此时 Y1 Y2 Y3 Y4 四集合无交集，Y1 Y2 Y3 Y4 并集为 Y。&lt;br /&gt;此时 Y1 Y2 Y3 Y4 X 五集合无交集，Y1 Y2 Y3 Y4 X 并集为 V。&lt;/p&gt;
+
+&lt;p&gt;注意几个基本概念：&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;smt 参数&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;smt 参数包括 项目、媒体、广告位、创意、关键字 五个。有一定的合法条件，只有合法的 smt 参数组合才被记录&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;* 关联项目&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;smt_b 参数扩充时，不考虑关联关系，但在数据展现时，ID 是否解释成具体名称需要考虑关联关系。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>SiteMaster 报告模块结构</title>
+   <link href="http://username.github.com/SiteMaster/2012/06/siteNavi"/>
+   <updated>2012-06-22T00:00:00+08:00</updated>
+   <id>http://username.github.com/SiteMaster/2012/06/siteNavi</id>
+   <content type="html">&lt;h1 id='sitemaster_'&gt;SiteMaster 报告模块结构&lt;/h1&gt;
+
+&lt;h2 id='_historical_realtime'&gt;实时与回溯 Historical Realtime&lt;/h2&gt;
+
+&lt;h3 id='_r1'&gt;概览 @R1&lt;/h3&gt;
+
+&lt;h3 id='_r2'&gt;地理位置 @R2&lt;/h3&gt;
+
+&lt;h3 id='_r3'&gt;流量来源 @R3&lt;/h3&gt;
+
+&lt;h3 id='_r4'&gt;停留页面 @R4&lt;/h3&gt;
+
+&lt;h2 id='_visitors_profiles'&gt;访问人群 Visitors Profiles&lt;/h2&gt;
+
+&lt;h3 id='_demographics'&gt;人口属性 Demographics&lt;/h3&gt;
+
+&lt;h4 id='_v1'&gt;语言 @V1&lt;/h4&gt;
+
+&lt;h4 id='_v2'&gt;地域 @V2&lt;/h4&gt;
+
+&lt;h4 id='_v3'&gt;收入 @V3&lt;/h4&gt;
+
+&lt;h3 id='_behavior'&gt;访问者行为 Behavior&lt;/h3&gt;
+
+&lt;h4 id='_v4'&gt;新访问者与回访者 @V4&lt;/h4&gt;
+
+&lt;h4 id='__v5'&gt;访问频次 (&lt;code&gt;频次分布&lt;/code&gt;/回访天数) @V5&lt;/h4&gt;
+
+&lt;h4 id='__v6'&gt;访问者参与 (&lt;code&gt;访问时长&lt;/code&gt;/访问深度) @V6&lt;/h4&gt;
+
+&lt;h3 id='_technology'&gt;技术参数 Technology&lt;/h3&gt;
+
+&lt;h4 id='_v7'&gt;浏览器 @V7&lt;/h4&gt;
+
+&lt;h4 id='_v7'&gt;操作系统 @V7&lt;/h4&gt;
+
+&lt;h4 id='_v7'&gt;屏幕尺寸 @V7&lt;/h4&gt;
+
+&lt;h4 id='_v7'&gt;屏幕颜色 @V7&lt;/h4&gt;
+
+&lt;h4 id='flash_v7'&gt;Flash版本 @V7&lt;/h4&gt;
+
+&lt;h4 id='java_v7'&gt;JAVA支持 @V7&lt;/h4&gt;
+
+&lt;h3 id='_mobile'&gt;移动设备 Mobile&lt;/h3&gt;
+
+&lt;h4 id='_v8'&gt;概述 @V8&lt;/h4&gt;
+
+&lt;h4 id='id1'&gt;设备&lt;/h4&gt;
+
+&lt;h5 id='_v9'&gt;设备类型 @V9&lt;/h5&gt;
+
+&lt;h5 id='_v9'&gt;设备品牌 @V9&lt;/h5&gt;
+
+&lt;h5 id='_v9'&gt;输入类型 @V9&lt;/h5&gt;
+
+&lt;h5 id='_v9'&gt;操作系统 @V9&lt;/h5&gt;
+
+&lt;h5 id='_v9'&gt;分辨率 @V9&lt;/h5&gt;
+
+&lt;h2 id='_advertising_data'&gt;广告数据 Advertising Data&lt;/h2&gt;
+
+&lt;h3 id='_a1'&gt;整合报告(&lt;code&gt;整合引导&lt;/code&gt;/曝光引导/点击引导) @A1&lt;/h3&gt;
+
+&lt;h3 id='_a2'&gt;广告流 @A2&lt;/h3&gt;
+
+&lt;h2 id='_traffic_source'&gt;来源细分 Traffic Source&lt;/h2&gt;
+
+&lt;h3 id='_s1'&gt;概述 @S1&lt;/h3&gt;
+
+&lt;h3 id='_s2'&gt;项目推广 @S2&lt;/h3&gt;
+
+&lt;h3 id='_s3'&gt;搜索引擎（&lt;code&gt;搜索引擎+关键字&lt;/code&gt;/登陆页） @S3&lt;/h3&gt;
+
+&lt;h3 id='__s4'&gt;社会化网络 (&lt;code&gt;来源网站+具体URL&lt;/code&gt;/登陆页） @S4&lt;/h3&gt;
+
+&lt;h3 id='__s5'&gt;推荐网站 (&lt;code&gt;来源网站+具体URL&lt;/code&gt;/登陆页） @S5&lt;/h3&gt;
+
+&lt;h3 id='__s6'&gt;直接流量 (&lt;code&gt;登陆页&lt;/code&gt;) @S6&lt;/h3&gt;
+
+&lt;h2 id='_site_content'&gt;网站内容 Site Content&lt;/h2&gt;
+
+&lt;h3 id='id2'&gt;页面&lt;/h3&gt;
+
+&lt;h4 id='__c1'&gt;所有页面 (&lt;code&gt;页面表格&lt;/code&gt;/页面路径) @C1&lt;/h4&gt;
+
+&lt;h4 id='_c2'&gt;目录化页面 @C2&lt;/h4&gt;
+
+&lt;h4 id='_c3'&gt;加载速度 @C3&lt;/h4&gt;
+
+&lt;h4 id='__c4'&gt;登陆页 (&lt;code&gt;页面表格&lt;/code&gt;/进入路径) @C4&lt;/h4&gt;
+
+&lt;h4 id='_c5'&gt;离开页 @C5&lt;/h4&gt;
+
+&lt;h4 id='_c6'&gt;热力图 @C6&lt;/h4&gt;
+
+&lt;h3 id='id3'&gt;互动事件&lt;/h3&gt;
+
+&lt;h4 id='_c7'&gt;热门事件 @C7&lt;/h4&gt;
+
+&lt;h4 id='_c8'&gt;页面 @C8&lt;/h4&gt;
+
+&lt;h2 id='_goal_coversions_'&gt;目标转化 Goal Coversions （暂不开发）&lt;/h2&gt;
+
+&lt;h2 id='_ecommerce_'&gt;电子商务 E-Commerce （暂不开发）&lt;/h2&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>与 Track 数据对接的几种情况</title>
+   <link href="http://username.github.com/SiteMaster/2012/06/siteGetTrack"/>
+   <updated>2012-06-22T00:00:00+08:00</updated>
+   <id>http://username.github.com/SiteMaster/2012/06/siteGetTrack</id>
+   <content type="html">&lt;h2 id='trackmaster_'&gt;TrackMaster 三维大表&lt;/h2&gt;
+
+&lt;p&gt;这张表，记录着最近半年的项目、广告位、媒体三者的对应关系。这是一张更新频率为 15 分钟的表。&lt;/p&gt;
+
+&lt;p&gt;此表在处理 Visits 的 smt_b 参数时，快速获取 项目ID 与 媒体ID，并进行信息补全存储。&lt;/p&gt;
+
+&lt;h2 id='siteid_'&gt;SiteID 项目关联表&lt;/h2&gt;
+
+&lt;p&gt;这张表，记录着与 SiteID 相关联的 项目ID 关系。这是一张更新频率为小时的表。&lt;/p&gt;
+
+&lt;p&gt;此表在处理 Visits 的 Cookie History 时进行过滤参照。 同时在请求 API 时，根据关联关系，判断哪些 ID 需要请求信息。即如果不关联的ID，将不请求 ID API，获取名称与数据信息。&lt;/p&gt;
+
+&lt;h2 id='id_api'&gt;ID API接口&lt;/h2&gt;
+
+&lt;p&gt;这是一个可以获取 ID 对应名称，指定条件下数据的接口。&lt;/p&gt;
+
+&lt;p&gt;此接口用来进行 ID 的对应参数与广告指标数据的获取。这里可以采取缓存机制用来记录 ID 对应的名称等反复查询的信息。&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>产品经理心得</title>
+   <link href="http://username.github.com/Temp/2012/06/PMmeeting"/>
+   <updated>2012-06-22T00:00:00+08:00</updated>
+   <id>http://username.github.com/Temp/2012/06/PMmeeting</id>
+   <content type="html">&lt;p&gt;1、文档标准与原型的标准。&lt;/p&gt;
+
+&lt;p&gt;高保真原型&lt;/p&gt;
+
+&lt;p&gt;1、产品逻辑的文档&lt;/p&gt;
+
+&lt;p&gt;2、产品原型（布局、文案、交互）&lt;/p&gt;
+
+&lt;p&gt;3、页面的文档&lt;/p&gt;
+
+&lt;p&gt;4、用户Journey&lt;/p&gt;
+
+&lt;p&gt;2、信息传达。&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;a. 逻辑
+b. 可视化
+c. 简化与例子&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;3、统筹规划&lt;/p&gt;</content>
+ </entry>
+ 
+ <entry>
+   <title>Jekyll Introduction</title>
+   <link href="http://username.github.com/lessons/2011/12/jekyll-introduction"/>
+   <updated>2011-12-29T00:00:00+08:00</updated>
+   <id>http://username.github.com/lessons/2011/12/jekyll-introduction</id>
+   <content type="html">&lt;p&gt;This Jekyll introduction will outline specifically what Jekyll is and why you would want to use it. Directly following the intro we&amp;#8217;ll learn exactly &lt;em&gt;how&lt;/em&gt; Jekyll does what it does.&lt;/p&gt;
+
+&lt;h2 id='overview'&gt;Overview&lt;/h2&gt;
+
+&lt;h3 id='what_is_jekyll'&gt;What is Jekyll?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a parsing engine bundled as a ruby gem used to build static websites from dynamic components such as templates, partials, liquid code, markdown, etc. Jekyll is known as &amp;#8220;a simple, blog aware, static site generator&amp;#8221;.&lt;/p&gt;
+
+&lt;h3 id='examples'&gt;Examples&lt;/h3&gt;
+
+&lt;p&gt;This website is created with Jekyll. &lt;a href='https://github.com/mojombo/jekyll/wiki/Sites'&gt;Other Jekyll websites&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id='what_does_jekyll_do'&gt;What does Jekyll Do?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is a ruby gem you install on your local system. Once there you can call &lt;code&gt;jekyll --server&lt;/code&gt; on a directory and provided that directory is setup in a way jekyll expects, it will do magic stuff like parse markdown/textile files, compute categories, tags, permalinks, and construct your pages from layout templates and partials.&lt;/p&gt;
+
+&lt;p&gt;Once parsed, Jekyll stores the result in a self-contained static &lt;code&gt;_site&lt;/code&gt; folder. The intention here is that you can serve all contents in this folder statically from a plain static web-server.&lt;/p&gt;
+
+&lt;p&gt;You can think of Jekyll as a normalish dynamic blog but rather than parsing content, templates, and tags on each request, Jekyll does this once &lt;em&gt;beforehand&lt;/em&gt; and caches the &lt;em&gt;entire website&lt;/em&gt; in a folder for serving statically.&lt;/p&gt;
+
+&lt;h3 id='jekyll_is_not_blogging_software'&gt;Jekyll is Not Blogging Software&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Jekyll is a parsing engine.&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;Jekyll does not come with any content nor does it have any templates or design elements. This is a common source of confusion when getting started. Jekyll does not come with anything you actually use or see on your website - you have to make it.&lt;/p&gt;
+
+&lt;h3 id='why_should_i_care'&gt;Why Should I Care?&lt;/h3&gt;
+
+&lt;p&gt;Jekyll is very minimalistic and very efficient. The most important thing to realize about Jekyll is that it creates a static representation of your website requiring only a static web-server. Traditional dynamic blogs like Wordpress require a database and server-side code. Heavily trafficked dynamic blogs must employ a caching layer that ultimately performs the same job Jekyll sets out to do; serve static content.&lt;/p&gt;
+
+&lt;p&gt;Therefore if you like to keep things simple and you prefer the command-line over an admin panel UI then give Jekyll a try.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Developers like Jekyll because we can write content like we write code:&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ability to write content in markdown or textile in your favorite text-editor.&lt;/li&gt;
+
+&lt;li&gt;Ability to write and preview your content via localhost.&lt;/li&gt;
+
+&lt;li&gt;No internet connection required.&lt;/li&gt;
+
+&lt;li&gt;Ability to publish via git.&lt;/li&gt;
+
+&lt;li&gt;Ability to host your blog on a static web-server.&lt;/li&gt;
+
+&lt;li&gt;Ability to host freely on GitHub Pages.&lt;/li&gt;
+
+&lt;li&gt;No database required.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h1 id='how_jekyll_works'&gt;How Jekyll Works&lt;/h1&gt;
+
+&lt;p&gt;The following is a complete but concise outline of exactly how Jekyll works.&lt;/p&gt;
+
+&lt;p&gt;Be aware that core concepts are introduced in rapid succession without code examples. This information is not intended to specifically teach you how to do anything, rather it is intended to give you the &lt;em&gt;full picture&lt;/em&gt; relative to what is going on in Jekyll-world.&lt;/p&gt;
+
+&lt;p&gt;Learning these core concepts should help you avoid common frustrations and ultimately help you better understand the code examples contained throughout Jekyll-Bootstrap.&lt;/p&gt;
+
+&lt;h2 id='initial_setup'&gt;Initial Setup&lt;/h2&gt;
+
+&lt;p&gt;After &lt;a href='/index.html#start-now'&gt;installing jekyll&lt;/a&gt; you&amp;#8217;ll need to format your website directory in a way jekyll expects. Jekyll-bootstrap conveniently provides the base directory format.&lt;/p&gt;
+
+&lt;h3 id='the_jekyll_application_base_format'&gt;The Jekyll Application Base Format&lt;/h3&gt;
+
+&lt;p&gt;Jekyll expects your website directory to be laid out like so:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+|-- _config.yml
+|-- _includes
+|-- _layouts
+|   |-- default.html
+|   |-- post.html
+|-- _posts
+|   |-- 20011-10-25-open-source-is-good.markdown
+|   |-- 20011-04-26-hello-world.markdown
+|-- _site
+|-- index.html
+|-- assets
+    |-- css
+        |-- style.css
+    |-- javascripts&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;_config.yml&lt;/strong&gt;&lt;br /&gt;Stores configuration data.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;_includes&lt;/strong&gt;&lt;br /&gt;This folder is for partial views.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;_layouts&lt;/strong&gt; &lt;br /&gt;This folder is for the main templates your content will be inserted into. You can have different layouts for different pages or page sections.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;_posts&lt;/strong&gt;&lt;br /&gt;This folder contains your dynamic content/posts. the naming format is required to be &lt;code&gt;@YEAR-MONTH-DATE-title.MARKUP@&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;_site&lt;/strong&gt;&lt;br /&gt;This is where the generated site will be placed once Jekyll is done transforming it.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;assets&lt;/strong&gt;&lt;br /&gt;This folder is not part of the standard jekyll structure. The assets folder represents &lt;em&gt;any generic&lt;/em&gt; folder you happen to create in your root directory. Directories and files not properly formatted for jekyll will be left untouched for you to serve normally.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;(read more: &lt;a href='https://github.com/mojombo/jekyll/wiki/Usage'&gt;https://github.com/mojombo/jekyll/wiki/Usage&lt;/a&gt;)&lt;/p&gt;
+
+&lt;h3 id='jekyll_configuration'&gt;Jekyll Configuration&lt;/h3&gt;
+
+&lt;p&gt;Jekyll supports various configuration options that are fully outlined here: &lt;a href='https://github.com/mojombo/jekyll/wiki/Configuration'&gt;https://github.com/mojombo/jekyll/wiki/Configuration&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='content_in_jekyll'&gt;Content in Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Content in Jekyll is either a post or a page. These content &amp;#8220;objects&amp;#8221; get inserted into one or more templates to build the final output for its respective static-page.&lt;/p&gt;
+
+&lt;h3 id='posts_and_pages'&gt;Posts and Pages&lt;/h3&gt;
+
+&lt;p&gt;Both posts and pages should be written in markdown, textile, or HTML and may also contain Liquid templating syntax. Both posts and pages can have meta-data assigned on a per-page basis such as title, url path, as well as arbitrary custom meta-data.&lt;/p&gt;
+
+&lt;h3 id='working_with_posts'&gt;Working With Posts&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating a Post&lt;/strong&gt; &lt;br /&gt;Posts are created by properly formatting a file and placing it the &lt;code&gt;_posts&lt;/code&gt; folder.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;A post must have a valid filename in the form &lt;code&gt;YEAR-MONTH-DATE-title.MARKUP&lt;/code&gt; and be placed in the &lt;code&gt;_posts&lt;/code&gt; directory. If the data format is invalid Jekyll will not recognize the file as a post. The date and title are automatically parsed from the filename of the post file. Additionally, each file must have &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;YAML Front-Matter&lt;/a&gt; prepended to its content. YAML Front-Matter is a valid YAML syntax specifying meta-data for the given file.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Order&lt;/strong&gt;&lt;br /&gt;Ordering is an important part of Jekyll but it is hard to specify a custom ordering strategy. Only reverse chronological and chronological ordering is supported in Jekyll.&lt;/p&gt;
+
+&lt;p&gt;Since the date is hard-coded into the filename format, to change the order, you must change the dates in the filenames.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Tags&lt;/strong&gt; &lt;br /&gt;Posts can have tags associated with them as part of their meta-data. Tags may be placed on posts by providing them in the post&amp;#8217;s YAML front matter. You have access to the post-specific tags in the templates. These tags also get added to the sitewide collection.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Categories&lt;/strong&gt; &lt;br /&gt;Posts may be categorized by providing one or more categories in the YAML front matter. Categories offer more significance over tags in that they can be reflected in the URL path to the given post. Note categories in Jekyll work in a specific way. If you define more than one category you are defining a category hierarchy &amp;#8220;set&amp;#8221;. Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title :  Hello World
+categories : [lessons, beginner]
+---&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This defines the category hierarchy &amp;#8220;lessons/beginner&amp;#8221;. Note this is &lt;em&gt;one category&lt;/em&gt; node in Jekyll. You won&amp;#8217;t find &amp;#8220;lessons&amp;#8221; and &amp;#8220;beginner&amp;#8221; as two separate categories unless you define them elsewhere as singular categories.&lt;/p&gt;
+
+&lt;h3 id='working_with_pages'&gt;Working With Pages&lt;/h3&gt;
+
+&lt;p&gt;&lt;strong&gt;Creating a Page&lt;/strong&gt;&lt;br /&gt;Pages are created by properly formatting a file and placing it anywhere in the root directory or subdirectories that do &lt;em&gt;not&lt;/em&gt; start with an underscore.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;In order to register as a Jekyll page the file must contain &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;YAML Front-Matter&lt;/a&gt;. Registering a page means 1) that Jekyll will process the page and 2) that the page object will be available in the &lt;code&gt;site.pages&lt;/code&gt; array for inclusion into your templates.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Categories and Tags&lt;/strong&gt;&lt;br /&gt;Pages do not compute categories nor tags so defining them will have no effect.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Sub-Directories&lt;/strong&gt;&lt;br /&gt;If pages are defined in sub-directories, the path to the page will be reflected in the url. Example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;.
+|-- people
+    |-- bob
+        |-- essay.html&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This page will be available at &lt;code&gt;http://yourdomain.com/people/bob/essay.html&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Recommended Pages&lt;/strong&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;index.html&lt;/strong&gt;&lt;br /&gt;You will always want to define the root index.html page as this will display on your root URL.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;404.html&lt;/strong&gt;&lt;br /&gt;Create a root 404.html page and GitHub Pages will serve it as your 404 response.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;sitemap.html&lt;/strong&gt;&lt;br /&gt;Generating a sitemap is good practice for SEO.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;about.html&lt;/strong&gt;&lt;br /&gt;A nice about page is easy to do and gives the human perspective to your website.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id='templates_in_jekyll'&gt;Templates in Jekyll&lt;/h2&gt;
+
+&lt;p&gt;Templates are used to contain a page&amp;#8217;s or post&amp;#8217;s content. All templates have access to a global site object variable: &lt;code&gt;site&lt;/code&gt; as well as a page object variable: &lt;code&gt;page&lt;/code&gt;. The site variable holds all accessible content and metadata relative to the site. The page variable holds accessible data for the given page or post being rendered at that point.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Create a Template&lt;/strong&gt;&lt;br /&gt;Templates are created by properly formatting a file and placing it in the &lt;code&gt;_layouts&lt;/code&gt; directory.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Formatting&lt;/strong&gt;&lt;br /&gt;Templates should be coded in HTML and contain YAML Front Matter. All templates can contain Liquid code to work with your site&amp;#8217;s data.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Rending Page/Post Content in a Template&lt;/strong&gt;&lt;br /&gt;There is a special variable in all templates named : &lt;code&gt;content&lt;/code&gt;. The &lt;code&gt;content&lt;/code&gt; variable holds the page/post content including any sub-template content previously defined. Render the content variable wherever you want your main content to be injected into your template:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;...
+&amp;lt;body&amp;gt;
+  &amp;lt;div id=&quot;sidebar&quot;&amp;gt; ... &amp;lt;/div&amp;gt;
+  &amp;lt;div id=&quot;main&quot;&amp;gt;
+    &amp;#123;{content}&amp;#125;
+  &amp;lt;/div&amp;gt;
+&amp;lt;/body&amp;gt;
+...&lt;/code&gt;&lt;/pre&gt;
+&lt;h3 id='subtemplates'&gt;Sub-Templates&lt;/h3&gt;
+
+&lt;p&gt;Sub-templates are exactly templates with the only difference being they define another &amp;#8220;root&amp;#8221; layout/template within their YAML Front Matter. This essentially means a template will render inside of another template.&lt;/p&gt;
+
+&lt;h3 id='includes'&gt;Includes&lt;/h3&gt;
+
+&lt;p&gt;In Jekyll you can define include files by placing them in the &lt;code&gt;_includes&lt;/code&gt; folder. Includes are NOT templates, rather they are just code snippets that get included into templates. In this way, you can treat the code inside includes as if it was native to the parent template.&lt;/p&gt;
+
+&lt;p&gt;Any valid template code may be used in includes.&lt;/p&gt;
+
+&lt;h2 id='using_liquid_for_templating'&gt;Using Liquid for Templating&lt;/h2&gt;
+
+&lt;p&gt;Templating is perhaps the most confusing and frustrating part of Jekyll. This is mainly due to the fact that Jekyll templates must use the Liquid Templating Language.&lt;/p&gt;
+
+&lt;h3 id='what_is_liquid'&gt;What is Liquid?&lt;/h3&gt;
+
+&lt;p&gt;&lt;a href='https://github.com/Shopify/liquid'&gt;Liquid&lt;/a&gt; is a secure templating language developed by &lt;a href='http://shopify.com'&gt;Shopify&lt;/a&gt;. Liquid is designed for end-users to be able to execute logic within template files without imposing any security risk on the hosting server.&lt;/p&gt;
+
+&lt;p&gt;Jekyll uses Liquid to generate the post content within the final page layout structure and as the primary interface for working with your site and post/page data.&lt;/p&gt;
+
+&lt;h3 id='why_do_we_have_to_use_liquid'&gt;Why Do We Have to Use Liquid?&lt;/h3&gt;
+
+&lt;p&gt;GitHub uses Jekyll to power &lt;a href='http://pages.github.com/'&gt;GitHub Pages&lt;/a&gt;. GitHub cannot afford to run arbitrary code on their servers so they lock developers down via Liquid.&lt;/p&gt;
+
+&lt;h3 id='liquid_is_not_programmerfriendly'&gt;Liquid is Not Programmer-Friendly.&lt;/h3&gt;
+
+&lt;p&gt;The short story is liquid is not real code and its not intended to execute real code. The point being you can&amp;#8217;t do jackshit in liquid that hasn&amp;#8217;t been allowed explicitly by the implementation. What&amp;#8217;s more you can only access data-structures that have been explicitly passed to the template.&lt;/p&gt;
+
+&lt;p&gt;In Jekyll&amp;#8217;s case it is not possible to alter what is passed to Liquid without hacking the gem or running custom plugins. Both of which cannot be supported by GitHub Pages.&lt;/p&gt;
+
+&lt;p&gt;As a programmer - this is very frustrating.&lt;/p&gt;
+
+&lt;p&gt;But rather than look a gift horse in the mouth we are going to suck it up and view it as an opportunity to work around limitations and adopt client-side solutions when possible.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Aside&lt;/strong&gt; &lt;br /&gt;My personal stance is to not invest time trying to hack liquid. It&amp;#8217;s really unnecessary &lt;em&gt;from a programmer&amp;#8217;s&lt;/em&gt; perspective. That is to say if you have the ability to run custom plugins (i.e. run arbitrary ruby code) you are better off sticking with ruby. Toward that end I&amp;#8217;ve built &lt;a href='http://github.com/plusjade/mustache-with-jekyll'&gt;Mustache-with-Jekyll&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='static_assets'&gt;Static Assets&lt;/h2&gt;
+
+&lt;p&gt;Static assets are any file in the root or non-underscored subfolders that are not pages. That is they have no valid YAML Front Matter and are thus not treated as Jekyll Pages.&lt;/p&gt;
+
+&lt;p&gt;Static assets should be used for images, css, and javascript files.&lt;/p&gt;
+
+&lt;h2 id='how_jekyll_parses_files'&gt;How Jekyll Parses Files&lt;/h2&gt;
+
+&lt;p&gt;Remember Jekyll is a processing engine. There are two main types of parsing in Jekyll.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Content parsing.&lt;/strong&gt; &lt;br /&gt;This is done with textile or markdown.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Template parsing.&lt;/strong&gt; &lt;br /&gt;This is done with the liquid templating language.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And thus there are two main types of file formats needed for this parsing.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Post and Page files.&lt;/strong&gt;&lt;br /&gt;All content in Jekyll is either a post or a page so valid posts and pages are parsed with markdown or textile.&lt;/li&gt;
+
+&lt;li&gt;&lt;strong&gt;Template files.&lt;/strong&gt; &lt;br /&gt;These files go in &lt;code&gt;_layouts&lt;/code&gt; folder and contain your blogs &lt;strong&gt;templates&lt;/strong&gt;. They should be made in HTML with the help of Liquid syntax. Since include files are simply injected into templates they are essentially parsed as if they were native to the template.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;Arbitrary files and folders.&lt;/strong&gt; &lt;br /&gt;Files that &lt;em&gt;are not&lt;/em&gt; valid pages are treated as static content and pass through Jekyll untouched and reside on your blog in the exact structure and format they originally existed in.&lt;/p&gt;
+
+&lt;h3 id='formatting_files_for_parsing'&gt;Formatting Files for Parsing.&lt;/h3&gt;
+
+&lt;p&gt;We&amp;#8217;ve outlined the need for valid formatting using &lt;strong&gt;YAML Front Matter&lt;/strong&gt;. Templates, posts, and pages all need to provide valid YAML Front Matter even if the Matter is empty. This is the only way Jekyll knows you want the file processed.&lt;/p&gt;
+
+&lt;p&gt;YAML Front Matter must be prepended to the top of template/post/page files:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+layout: post
+category : pages
+tags : [how-to, jekyll]
+---
+
+... contents ...&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Three hyphens on a new line start the Front-Matter block and three hyphens on a new line end the block. The data inside the block must be valid YAML.&lt;/p&gt;
+
+&lt;p&gt;Configuration parameters for YAML Front-Matter is outlined here: &lt;a href='https://github.com/mojombo/jekyll/wiki/YAML-Front-Matter'&gt;A comprehensive explanation of YAML Front Matter&lt;/a&gt;&lt;/p&gt;
+
+&lt;h4 id='defining_layouts_for_posts_and_templates_parsing'&gt;Defining Layouts for Posts and Templates Parsing.&lt;/h4&gt;
+
+&lt;p&gt;The &lt;code&gt;layout&lt;/code&gt; parameter in the YAML Front Matter defines the template file for which the given post or template should be injected into. If a template file specifies its own layout, it is effectively being used as a &lt;code&gt;sub-template.&lt;/code&gt; That is to say loading a post file into a template file that refers to another template file with work in the way you&amp;#8217;d expect; as a nested sub-template.&lt;/p&gt;
+
+&lt;h2 id='how_jekyll_generates_the_final_static_files'&gt;How Jekyll Generates the Final Static Files.&lt;/h2&gt;
+
+&lt;p&gt;Ultimately, Jekyll&amp;#8217;s job is to generate a static representation of your website. The following is an outline of how that&amp;#8217;s done:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Jekyll collects data.&lt;/strong&gt; &lt;br /&gt;Jekyll scans the posts directory and collects all posts files as post objects. It then scans the layout assets and collects those and finally scans other directories in search of pages.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Jekyll computes data.&lt;/strong&gt; &lt;br /&gt;Jekyll takes these objects, computes metadata (permalinks, tags, categories, titles, dates) from them and constructs one big &lt;code&gt;site&lt;/code&gt; object that holds all the posts, pages, layouts, and respective metadata. At this stage your site is one big computed ruby object.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Jekyll liquifies posts and templates.&lt;/strong&gt;&lt;br /&gt;Next jekyll loops through each post file and converts (through markdown or textile) and &lt;strong&gt;liquifies&lt;/strong&gt; the post inside of its respective layout(s). Once the post is parsed and liquified inside the the proper layout structure, the layout itself is &amp;#8220;liquified&amp;#8221;. &lt;br /&gt;&lt;strong&gt;Liquification&lt;/strong&gt; is defined as follows: Jekyll initiates a Liquid template, and passes a simpler hash representation of the ruby site object as well as a simpler hash representation of the ruby post object. These simplified data structures are what you have access to in the templates.&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Jekyll generates output.&lt;/strong&gt; &lt;br /&gt;Finally the liquid templates are &amp;#8220;rendered&amp;#8221;, thereby processing any liquid syntax provided in the templates and saving the final, static representation of the file.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;Notes.&lt;/strong&gt;&lt;br /&gt;Because Jekyll computes the entire site in one fell swoop, each template is given access to a global &lt;code&gt;site&lt;/code&gt; hash that contains useful data. It is this data that you&amp;#8217;ll iterate through and format using the Liquid tags and filters in order to render it onto a given page.&lt;/p&gt;
+
+&lt;p&gt;Remember, in Jekyll you are an end-user. Your API has only two components:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;The manner in which you setup your directory.&lt;/li&gt;
+
+&lt;li&gt;The liquid syntax and variables passed into the liquid templates.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;All the data objects available to you in the templates via Liquid are outlined in the &lt;strong&gt;API Section&lt;/strong&gt; of Jekyll-Bootstrap. You can also read the original documentation here: &lt;a href='https://github.com/mojombo/jekyll/wiki/Template-Data'&gt;https://github.com/mojombo/jekyll/wiki/Template-Data&lt;/a&gt;&lt;/p&gt;
+
+&lt;h2 id='conclusion'&gt;Conclusion&lt;/h2&gt;
+
+&lt;p&gt;I hope this paints a clearer picture of what Jekyll is doing and why it works the way it does. As noted, our main programming constraint is the fact that our API is limited to what is accessible via Liquid and Liquid only.&lt;/p&gt;
+
+&lt;p&gt;Jekyll-bootstrap is intended to provide helper methods and strategies aimed at making it more intuitive and easier to work with Jekyll =)&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;Thank you&lt;/strong&gt; for reading this far.&lt;/p&gt;
+
+&lt;h2 id='next_steps'&gt;Next Steps&lt;/h2&gt;
+
+&lt;p&gt;Please take a look at &lt;a href='' /&gt; or jump right into &lt;a href=''&gt;Usage&lt;/a&gt; if you&amp;#8217;d like.&lt;/p&gt;</content>
+ </entry>
+ 
+ 
+</feed>

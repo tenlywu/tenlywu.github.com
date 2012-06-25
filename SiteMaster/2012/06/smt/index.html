@@ -1,0 +1,345 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>SMT 参数定义</title>
+    
+    <meta name="author" content="Name Lastname">
+
+    <!-- Le HTML5 shim, for IE6-8 support of HTML elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <!-- Le styles -->
+    <link href="/assets/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/assets/themes/twitter/css/style.css?body=1" rel="stylesheet" type="text/css" media="all">
+
+    <!-- Le fav and touch icons -->
+  <!-- Update these with your own images
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/apple-touch-icon-114x114.png">
+  -->
+  </head>
+
+  <body>
+
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="/">Tenly 知识管理</a>
+          <ul class="nav">
+            
+            
+            
+
+
+  
+    
+      
+      	
+      	<li><a href="/archive.html">Archive</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/categories.html">Categories</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/pages.html">Pages</a></li>
+      	
+      
+    
+  
+    
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/tags.html">Tags</a></li>
+      	
+      
+    
+  
+
+
+
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+
+      <div class="content">
+        
+<div class="page-header">
+  <h1>SMT 参数定义</h1>
+</div>
+
+<div class="row">
+  <div class="span8">
+    <h2 id='smt_'>SMT 参数定义</h2>
+
+<p>每一个 Visits 如果需要涉及 smt 来源参数，数据结构上固定存在五个字段存储参数信息，分别是：</p>
+
+<ul>
+<li>a 项目</li>
+
+<li>b 广告位</li>
+
+<li>c 媒体</li>
+
+<li>i 创意</li>
+
+<li>k 关键字</li>
+</ul>
+
+<p>现开放两套 smt 方案给用户使用：</p>
+
+<p>方案一：实现与 TrackMaster 的来源对接</p>
+
+<ul>
+<li>~~smt_a~~：INT 用来收集 a 参数属性。但由于 smt_b 信息可以查表获取，所以此参数不开放填写。</li>
+
+<li>smt_b【必选】：INT 用来收集 b 参数属性。<strong>如果查表无完整信息则放弃所有来源信息。</strong></li>
+
+<li>~~smt_c~~：INT 用来收集 c 参数属性。但由于 smt_c 信息可以查表获取，所以此参数不开放填写。</li>
+
+<li>smt_i【可选】：INT 用来收集 i 参数属性。如果不填或者错误， i 参数记录值都为 0。</li>
+
+<li>smt_k【可选】：CHAR 用来收集 k 参数属性。如果不填或者错误， k 参数记录值都为 空。</li>
+</ul>
+
+<p>方案二：开放给用户自定义使用（命名上区别两套方案，换2个完全不同的字母，防止手误）</p>
+
+<ul>
+<li>smt_cp【必选】：CHAR 用来收集 a 参数属性。</li>
+
+<li>smt_pl【必选】：CHAR 用来收集 b 参数属性。</li>
+
+<li>smt_md【必选】：CHAR 用来收集 c 参数属性。</li>
+
+<li>smt_ct【可选】：CHAR 用来收集 i 参数属性。如果不填或者错误， i 参数记录值都为 0。</li>
+
+<li>smt_kw【可选】：CHAR 用来收集 k 参数属性。如果不填或者错误， k 参数记录值都为 空。</li>
+</ul>
+
+<p>两套方案的 smt 参数不能混用。即不允许同时存在 <code>smt_?</code> 与 <code>smt_??</code>。如果混用，丢弃所有 smt 参数值。</p>
+
+<h2 id='id4'>示例</h2>
+
+<p>http://www.tenly.com/?<code>smt_b=200001101</code></p>
+
+<ul>
+<li>a: 100002(查表获取)</li>
+
+<li>b: 200001101</li>
+
+<li>c: 10204（查表获取）</li>
+
+<li>i: 0</li>
+
+<li>k: 空</li>
+</ul>
+
+<p>http://www.tenly.com/?<code>smt_b=200001101</code>&amp;<code>smt_pl=newone</code></p>
+
+<ul>
+<li>a: 空</li>
+
+<li>b: 空</li>
+
+<li>c: 空</li>
+
+<li>i: 空</li>
+
+<li>k: 空</li>
+</ul>
+
+<p>http://www.tenly.com/?<code>smt_cp=113456</code>&amp;<code>smt_pl=newone</code></p>
+
+<ul>
+<li>a: 空</li>
+
+<li>b: 空</li>
+
+<li>c: 空</li>
+
+<li>i: 空</li>
+
+<li>k: 空</li>
+</ul>
+
+<p>http://www.tenly.com/?<code>smt_cp=20241</code>&amp;<code>smt_pl=newone</code>&amp;<code>smt_md=sina</code></p>
+
+<ul>
+<li>a: 20241</li>
+
+<li>b: newone</li>
+
+<li>c: sina</li>
+
+<li>i: 0</li>
+
+<li>k: 空</li>
+</ul>
+    <hr>
+    <div class="pagination">
+      <ul>
+      
+        <li class="prev"><a href="/SiteMaster/2012/06/siteTraffic" title="流量的两种切分方式">&larr; Previous</a></li>
+      
+        <li><a href="/archive.html">Archive</a></li>
+      
+        <li class="next"><a href="/SiteMaster/2012/06/siteAds" title="广告数据模块页面">Next &rarr;</a></li>
+      
+      </ul>
+    </div>
+    <hr>
+    
+
+
+  <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'tenlywu'; // required: replace example with your forum shortname
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+
+
+  </div>
+  
+  <div class="span4">
+    <h4>Published</h4>
+    <div class="date"><span>22 June 2012</span></div>
+    
+  
+  
+
+  
+  <h2 id="SiteMaster-ref">SiteMaster</h2>
+  <ul>
+      
+    
+
+
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/siteAds">广告数据模块页面</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li class="active"><a href="/SiteMaster/2012/06/smt" class="active">SMT 参数定义</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/siteTraffic">流量的两种切分方式</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/siteNavi">SiteMaster 报告模块结构</a></li>
+      	
+      
+    
+  
+    
+      
+      	
+      	<li><a href="/SiteMaster/2012/06/siteGetTrack">与 Track 数据对接的几种情况</a></li>
+      	
+      
+    
+  
+
+
+
+  </ul>
+  
+
+  
+  <h2 id="lessons-ref">lessons</h2>
+  <ul>
+      
+    
+
+
+  
+    
+      
+      	
+      	<li><a href="/lessons/2011/12/jekyll-introduction">Jekyll Introduction</a></li>
+      	
+      
+    
+  
+
+
+
+  </ul>
+  
+
+  </div>
+</div>
+
+
+      </div>
+
+      <footer>
+        <p>&copy; Name Lastname 2012 
+          with help from <a href="http://jekyllbootstrap.com" target="_blank" title="The Definitive Jekyll Blogging Framework">Jekyll Bootstrap</a>
+          and <a href="http://twitter.github.com/bootstrap/" target="_blank">Twitter Bootstrap</a>
+        </p>
+      </footer>
+
+    </div> <!-- /container -->
+
+    
+  </body>
+</html>
+
