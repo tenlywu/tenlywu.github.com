@@ -16,9 +16,7 @@
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
   
-  var iframe = document.getElementById('myIframe');
-  iframe.src = pageTracker._getLinkerUrl('http://www.baidu.com/');
-
+  
 </script>
 </head>
 
@@ -27,6 +25,10 @@
 
 
 <iframe id="myIframe"></iframe>
+<script type="text/javascript">
+  var iframe = document.getElementById('myIframe');
+  iframe.src = pageTracker._getLinkerUrl('http://www.baidu.com/');
+</script>
 
 </body>
 </html>
