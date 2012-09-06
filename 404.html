@@ -9,6 +9,9 @@
   _gaq.push(['_setAccount', 'UA-15177195-2']);
   _gaq.push(['_setCustomVar', 4, '访问', '登陆', 2]);
   _gaq.push(['_trackPageview']);
+  var pageTracker = _gat._getTrackerByName();
+  var iframe = document.getElementById('myIframe');
+  iframe.src = pageTracker._getLinkerUrl('http://www.baidu.com/');
 
   (function() {
     var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
@@ -24,7 +27,7 @@
 页面c
 
 
-<iframe id="myIframe" src="javascript:pageTracker._getLinkerUrl('http://www.baidu.com/');"></iframe>
+<iframe id="myIframe"></iframe>
 
 </body>
 </html>
